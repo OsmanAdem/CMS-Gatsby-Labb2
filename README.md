@@ -98,3 +98,4 @@ The fastest way to combine your favorite tools and APIs to build the fastest sit
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 # gatsby-with-contentful
+# CMS-Gatsby-Labb2
