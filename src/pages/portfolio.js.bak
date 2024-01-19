@@ -1,0 +1,15 @@
+   <ul className="posts">
+      {data.allContentfulPost.edges.map((edge) =>{
+        return (
+<li className="post" key={edge.node.id}>
+<Link to={`/portfolio/${edge.node.slug}/`}>
+            {edge.node.title}
+</Link>
+<p className="excerpt">
+            {edge.node.description.childMarkdoenRemark.excerpt}
+</p>
+<GatsbyImage alt={edge.node.title} image={edge.node.heroImage.gatsbyImage} />
+</li>
+        )
+      })}
+</ul>
