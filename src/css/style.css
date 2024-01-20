@@ -1,6 +1,9 @@
+body {
+  background-color: lightgrey;
+}
 
 .footer {
-  background-color: grey;
-  padding: 40px;
+  background-color: white;
+  padding: 50px;
   width: 100%;
 }

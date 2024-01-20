@@ -11,16 +11,3 @@ const homeTemplate = (contentfulPage) => {
 }
  
 export default homeTemplate
-
-// import React from 'react';
-
-// const HomeTemplate = ({ contentfulPage }) => {
-//   return (
-//     <main>
-//       <h2>{contentfulPage.title}</h2>
-//       <p>Home Template 2</p>
-//     </main>
-//   );
-// };
-
-// export default HomeTemplate;

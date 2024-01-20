@@ -1,6 +1,6 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
 import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const ContactTemplate = ( contentfulPage ) => {
   const {allContentfulLink} = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const ContactTemplate = ( contentfulPage ) => {
   return (
     <main>
       <h2>{contentfulPage.title}</h2>
-      <p>Kontakta oss</p>
+      <p>Contact Us</p>
       <ul>
                 {allContentfulLink.edges.map((edge) =>{
                     return(
@@ -27,6 +27,7 @@ const ContactTemplate = ( contentfulPage ) => {
                     );
                 })}
             </ul>
+            {contentfulPage.image && <GatsbyImage alt={contentfulPage.title} image={contentfulPage.image.gatsbyImage}></GatsbyImage>}
     </main>
   );
 };
